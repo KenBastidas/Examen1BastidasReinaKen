@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Examen1BastidasReinaKen.Examen
+namespace Examen
 {
-    class Formu
+    class Formula
     {
         public static double Formu(int k, int d)
         {
@@ -15,7 +15,7 @@ namespace Examen1BastidasReinaKen.Examen
             double calula = 0;
             for (int x = k; x <= d; x++)
             {
-                calula += ((Math.Pow(2, x + 1)) - (Math.Pow(2, x))) / (x + 1);
+                calula += ((Math.Pow(2,x*5)) + (Math.Pow(2^2, x * 4)) + (Math.Pow(2^3,x*3)) + (Math.Pow(2^4,x*2)) + (Math.Pow(2^5,x*1)));
             }
             total = total + calula;
 
